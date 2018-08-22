@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>图书管理</title>
+
+  <script src="/lib/jquery/dist/jquery.min.js"></script>
+  <style>
+    body {
+      background: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <input type="text" id="sj" onblur="aa();">
+  </table>
+  <script>
+   function aa(){
+        var a=document.getElementById("sj").value
+        reg=/^\d+$/;
+        var b=parseInt(a)
+        alert(b)
+        if ((typeof b) === "number"){
+            alert("成功")
+            return true;
+        }
+        else{
+            alert("输入的不是数字")
+            return flase;
+        }
+        // if(reg.test(a)==true){
+        //     alert("都是数字！通过");
+        //     return true;
+        // }else{
+        //     alert("不是纯数字！失败！");
+        //     return false;
+        // }
+   }
+  </script>
+    
+</body>
+</html>
